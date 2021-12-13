@@ -1,21 +1,22 @@
 ---
 categories:
-  - "windows"
-  - "linux"
-  - "i3"
-date: 2016-07-03T22:46:00Z
+    - windows
+    - linux
+    - i3
+date: 2016-07-03T22:46:00.000Z
 cover:
-    image: "windows-on-top-1.png" # image path/url
-    alt: "Windows and Linux" # alt text
-    caption: "Windows and Linux" # display caption under cover
-    relative: true # when using page bundles set this to true
-aliases: 
-  - "/i3-windows"
-tags: 
-  - "windows"
-  - "linux"
-  - "i3"
-title: "Running i3 Window Manager on Bash For Windows"
+    image: windows-on-top-1.png
+    alt: Windows and Linux
+    caption: Windows and Linux
+    relative: true
+aliases:
+    - /i3-windows
+tags:
+    - windows
+    - linux
+    - i3
+title: Running i3 Window Manager on Bash For Windows
+lastmod: '2021-12-13T10:40:46.704Z'
 ---
 
 That might be the longest title for a blog post ever, but it's kind of hard to describe what's going on here if you're not familiar with the latest updates from Microsoft land.  <!--more-->Here's a quick refresher:
@@ -26,7 +27,7 @@ That might be the longest title for a blog post ever, but it's kind of hard to d
 
 * This is kind of a Big Deal.  If it works, it has the potential to win back many developers who abandoned the Windows platform years ago because of the inability of Windows to deal with the *nix world.  The huge popularity of Ruby, Python, Redis, and dozens of other *nix first tools that were born in *nix.  Some of these tools, like Ruby, have Windows installers, but Windows is an afterthought and second-class citizen at best.
 
-* Many developers (like me) started using Windows but moved to Mac or Linux operating systems over the years as it became increasingly hard to write software in Windows.  
+* Many developers (like me) started using Windows but moved to Mac or Linux operating systems over the years as it became increasingly hard to write software in Windows.
 
 * [Opinion] Linux isn't the best place to work 100% of the time.  Office applications are lacking compatibility and features.  There is no decent email client for Linux.  Save your apologist comments and *what about Open Office/Geary/Thunderbird* comments.  If you've used them, you know that they're not as nice as the applications available in macOS and Windows.
 
@@ -42,9 +43,9 @@ Imagine my surprise when I installed Bash for Windows on this build and pretty m
 
 The real shortfall of running Bash for Windows right now is the lack of a good terminal emulator.  I tried ConEmu and maybe half a dozen others, with ConEmu being the best of this sorry lot.  If you're used to using a good terminal in Linux, none of the tools available on Windows are going to satisfy you.
 
-I knew from my Windows work 20 years ago that there were XWindows servers available.  I searched and found MobaXterm.  It has a built in terminal emulator (also crap -- sorry), but among the other features included there's a pretty good X Windows server. 
+I knew from my Windows work 20 years ago that there were XWindows servers available.  I searched and found MobaXterm.  It has a built in terminal emulator (also crap -- sorry), but among the other features included there's a pretty good X Windows server.
 
-I've been in love with i3 window manager since Erik St. Martin introduced me to it 3 years ago.  Having such nicely organized and tiled windows over multiple desktops is an amazing productivity boon.  With good keyboard shortcuts for every operation, I found I never took my hands off the keyboard.  
+I've been in love with i3 window manager since Erik St. Martin introduced me to it 3 years ago.  Having such nicely organized and tiled windows over multiple desktops is an amazing productivity boon.  With good keyboard shortcuts for every operation, I found I never took my hands off the keyboard.
 
 I started MobaXTerm and looked at the X Server settings.  I shrugged, fired up the X Server and typed "i3" in my bash prompt.  `i3` complained that there was another window manager already running.  I went back to the X Server settings and chose "Windowed Mode: X11 Server constrained to a single window".  It was the only X Server that didn't also start a window manager like `dwm` or `fvwm`.  So it started a simple "rooted" X Server which appears as a window on my Windows desktop with a black screen.
 
@@ -56,8 +57,8 @@ Strange, strange times we live in. 20 years ago Microsoft called Linux a cancer 
 
 Screen shots:
 
-[i3 in MobaXTerm](/images/2017/09/i3.png)
-[i3 behind Windows](/images/2017/09/windows-on-top.png)
+[i3 in MobaXTerm](i3.png)
+[i3 behind Windows](windows-on-top.png)
 
 
 

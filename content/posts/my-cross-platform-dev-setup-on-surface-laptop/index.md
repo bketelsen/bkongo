@@ -1,5 +1,5 @@
 ---
-categories: 
+categories:
   - "development"
   - "linux"
   - "windows"
@@ -10,9 +10,9 @@ cover:
     alt: "Desktop" # alt text
     caption: "Desktop" # display caption under cover
     relative: true # when using page bundles set this to true
-aliases: 
+aliases:
   - "/my-cross-platform-dev-setup-on-surface-laptop"
-tags: 
+tags:
   - "development"
   - "linux"
   - "windows"
@@ -24,7 +24,7 @@ I want to document a setup that I've found that works really well for me using W
 <!--more-->
 
 ### Objective
-My objective is to build a development environment that is comfortable for Open Source development with a target of mostly Linux servers.  I develop primarily in [Go](https://golang.org) but infrequently do some Javascript and HTML work too.  Prior to this setup, I have been using a Linux dev machine either directly or remotely over SSH.  My ultimate goal is to replicate a Linux development environment without having to use a separate machine.   
+My objective is to build a development environment that is comfortable for Open Source development with a target of mostly Linux servers.  I develop primarily in [Go](https://golang.org) but infrequently do some Javascript and HTML work too.  Prior to this setup, I have been using a Linux dev machine either directly or remotely over SSH.  My ultimate goal is to replicate a Linux development environment without having to use a separate machine.
 
 ### Trade Offs
 There are some implicit trade-offs in this setup, and I will acknowledge them along the way.  I recognize that this setup isn't perfect, but I've found it to be very comfortable with very few limitations.
@@ -45,10 +45,10 @@ It's also useful to acknowledge my personal preferences, since they obviously in
 There are a few key components to this configuration that make it unique, and improved my happiness dramatically.
 
 #### Where to put the code
-I store my code in Windows.  For the past year I treated the WSL filesystem and the Windows filesystem as two separate entities with a hard border between them.  WSL allows you to access the Windows filesystem through a mount at '/mnt/c' which is awesome, but viewing those files in WSL just bothered me because the permissions show as '777' with an owner of 'root'.  This bothers me most because of the ugly display of these permissions in bash.  Like many people, I had an alias in my bash settings to append "--color=auto" to my 'ls' calls.  This causes files with excessive permissions to show up in black text with a bright green background.  
-> It drove me crazy, and blocked me from even looking at the windows filesystem from bash.  
+I store my code in Windows.  For the past year I treated the WSL filesystem and the Windows filesystem as two separate entities with a hard border between them.  WSL allows you to access the Windows filesystem through a mount at '/mnt/c' which is awesome, but viewing those files in WSL just bothered me because the permissions show as '777' with an owner of 'root'.  This bothers me most because of the ugly display of these permissions in bash.  Like many people, I had an alias in my bash settings to append "--color=auto" to my 'ls' calls.  This causes files with excessive permissions to show up in black text with a bright green background.
+> It drove me crazy, and blocked me from even looking at the windows filesystem from bash.
 
-![uglycolors](/images/2017/09/uglycolors.png)
+![uglycolors](uglycolors.png)
 
 That meant that my source code was only in WSL's filesystem, and completely invisible to Windows.   In turn, this caused limitations on what I could do with the code.  Because it was only in WSL, I had to operate on the files using either command-line tools, or X Windows tools using an X Client from Windows.  It wasn't a show-stopper, but it was a little awkward.
 
@@ -56,7 +56,7 @@ I don't know why it didn't occur to me before, but I just removed the "--color=a
 ```
 mv ~/src /mnt/c/projects
 ```
-Then I set my $GOPATH to "/mnt/c/projects" and Go worked beautifully from WSL.  I also installed Go on Windows and set my GOPATH to "C:\projects", which is the same folder.  Now I have one folder accessible to both WSL and Windows. Because Go stores compiled libraries in a folder named after the architecture under "$GOPATH/pkg", I can compile from both Windows and Linux without overwriting any object files or binaries.  
+Then I set my $GOPATH to "/mnt/c/projects" and Go worked beautifully from WSL.  I also installed Go on Windows and set my GOPATH to "C:\projects", which is the same folder.  Now I have one folder accessible to both WSL and Windows. Because Go stores compiled libraries in a folder named after the architecture under "$GOPATH/pkg", I can compile from both Windows and Linux without overwriting any object files or binaries.
 > That's pretty damn nice.
 
 On the Windows side, I installed Visual Studio Code and set it up to use the Windows installation of Go for all the tooling required by the VSCode plugin for Go.   The only change to my VS Code configuration file was to specify the global $GOPATH:
@@ -73,7 +73,7 @@ I installed Docker for Windows, and installed the "docker" command in WSL.  To l
 export DOCKER_HOST=tcp://127.0.0.1:2375
 ```
 It's also necessary to tell Docker for Windows to listen on TCP:
-![dockersettings](/images/2017/09/dockersettings.png)
+![dockersettings](dockersettings.png)
 
 Now Docker works from both Windows and WSL.  All my code and scripts that expected a local Docker instance continue to work as they did when I was developing directly on a Linux host.
 
@@ -83,6 +83,6 @@ The Surface Laptop is an awesome little machine.  It is roughly the same size as
 But maybe most exciting is using the Surface Laptop with the [Surface Dock](https://www.microsoft.com/en-us/store/d/microsoft-surface-dock/8qrh2npz0s0p/hpr1?OCID=AID620866_SEM_WcsVqgAABYJtT8Nn%3a20170929022339%3as).  The dock has several USB ports, two mini Display Port ports, and audio out.  When I want to work at my desk, I just plug the single (slightly awkward) dock plug in to the side of the laptop and close the lid.  I get my nice WASD Code mechanical keyboard, a big 4k monitor, and all the comforts of working on a desktop.  Reliable and easy docking is something I missed terribly in both Linux laptops and macOS.  Single plug, simple docking experience.  I love this probably most of all.
 
 ### Summary
-None of this is revolutionary, but the setup as a whole makes me happy.  I have all the comforts of a consumer-grade operating system (Windows), so I can easily use Skype, Slack, Microsoft Teams, Outlook, etc without fighting to install them on Linux, or worse -- settling for a nasty web interface. 
+None of this is revolutionary, but the setup as a whole makes me happy.  I have all the comforts of a consumer-grade operating system (Windows), so I can easily use Skype, Slack, Microsoft Teams, Outlook, etc without fighting to install them on Linux, or worse -- settling for a nasty web interface.
 I also have all the benefits of a full Linux development environment.  I can use "apt" to install any packages I want, I use Neovim, all my dotfiles work perfectly in WSL.  It's a full Linux development environment without a VM.
-**This setup has enabled me to go down to a single computer for my day-to-day usage.**  Only one computer on my desk now, instead of the three that were there before.   I haven't turned on my MacBook Pro in almost a week. 
+**This setup has enabled me to go down to a single computer for my day-to-day usage.**  Only one computer on my desk now, instead of the three that were there before.   I haven't turned on my MacBook Pro in almost a week.

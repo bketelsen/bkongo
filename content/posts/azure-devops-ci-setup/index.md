@@ -1,21 +1,22 @@
 ---
 title: Azure DevOps CI Setup
 layout: post
-date: "2018-09-11"
-aliases: 
-- "/azure-devops-ci-setup"
+date: '2018-09-11'
+aliases:
+    - /azure-devops-ci-setup
 cover:
-    image: "unsplash-photos-QRkew0KwXSM.jpg" # image path/url
-    alt: "Crab" # alt text
-    caption: "https://unsplash.com/photos/QRkew0KwXSM" # display caption under cover
-    relative: true # when using page bundles set this to true
-description: "Setting up CI on Azure DevOps"
+    image: unsplash-photos-QRkew0KwXSM.jpg
+    alt: Crab
+    caption: 'https://unsplash.com/photos/QRkew0KwXSM'
+    relative: true
+description: Setting up CI on Azure DevOps
 tags:
-- "elixir"
-- "ci"
-- "azure"
+    - elixir
+    - ci
+    - azure
 categories:
-- "CI/CD"
+    - CI/CD
+lastmod: '2021-12-13T10:37:25.630Z'
 ---
 
 
@@ -27,23 +28,23 @@ Microsoft just announced a killer continuous integration setup for Github, and I
 
 Step one is to head to the [Github Marketplace](https://github.com/marketplace/azure-pipelines) and install the Azure Pipelines service.
 
-![Azure Pipelines on Github](/images/2018/09/Screen-Shot-2018-09-11-at-9.42.48-AM.png)
+![Azure Pipelines on Github](Screen-Shot-2018-09-11-at-9.42.48-AM.png)
 
 I clicked on the "Set up a plan" button, and then selected the Free option, and "Install it for free" link.  This allows Linux, Mac and Windows build machines, with 10 free parallel jobs.  That's plenty for most open source projects.
 
-![Confirmation Dialog](/images/2018/09/Screen-Shot-2018-09-11-at-9.43.08-AM.png)
+![Confirmation Dialog](Screen-Shot-2018-09-11-at-9.43.08-AM.png)
 
 Next I confirmed the Marketplace change by choosing the "Complete order and begin installation" button.
 
-![Review Order](/images/2018/09/Screen-Shot-2018-09-11-at-9.43.26-AM.png)
+![Review Order](Screen-Shot-2018-09-11-at-9.43.26-AM.png)
 
 After authentication with my Azure account, I needed to create a Project.  Projects in Azure DevOps are conceptual containers that host a single repository and it's build procedures.
 
-![Setup Project](/images/2018/09/Screen-Shot-2018-09-11-at-9.45.52-AM.png)
+![Setup Project](Screen-Shot-2018-09-11-at-9.45.52-AM.png)
 
 After creating the project, I needed to pick a repository:
 
-![Choose A Repository](/images/2018/09/Screen-Shot-2018-09-11-at-9.46.37-AM.png)
+![Choose A Repository](Screen-Shot-2018-09-11-at-9.46.37-AM.png)
 
 ### Configuration
 
@@ -72,8 +73,8 @@ steps:
  ```
 
  After some experimentation I created two steps in my pipeline, the first runs tests, and the second builds the Docker container for production usage.  As is the case every time I create a new CI environment, it took 40 commits to get the Docker networking and database configuration setup right.  Eventually, though, I succeeded:
- 
- ![FAIL](/images/2018/09/Screen-Shot-2018-09-11-at-9.58.52-AM.png)
+
+ ![FAIL](Screen-Shot-2018-09-11-at-9.58.52-AM.png)
 
  These results were correct; I hadn't updated the tests since adding authentication to the web app yesterday.  *So I did what any good developer would do – I deleted the failing tests.*  Just temporarily, of course, because I wanted to focus my time on configuring Azure Pipelines, not learning how to test authenticated HTTP requests in Phoenix.
 

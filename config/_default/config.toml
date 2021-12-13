@@ -18,8 +18,7 @@ summaryLength = 0
 bio = "A little bit about you"
 image = "img/author.jpg"
 links = [
-  {email = "mailto:hello@your_domain.com"}, #   { link = "https://link-to-some-website.com/" },  #   { codepen = "https://codepen.io/username" },  #   { dev = "https://dev.to/username" },
-  #   { discord = "https://discord.gg/invitecode" },
+  {email = "mailto:hello@your_domain.com"}, #   { link = "https://link-to-some-website.com/" },  #   { codepen = "https://codepen.io/username" },  #   { dev = "https://dev.to/username" },  #   { discord = "https://discord.gg/invitecode" },
   #   { dribbble = "https://dribbble.com/username" },
   #   { facebook = "https://facebook.com/username" },
   #   { foursquare = "https://foursquare.com/username" },
@@ -41,3 +40,30 @@ links = [
   {youtube = "https://youtube.com/username"},
 ]
 name = "Brian Ketelsen"
+
+[imaging]
+# Default resample filter used for resizing. Default is Box,
+# a simple and fast averaging filter appropriate for downscaling.
+# See https://github.com/disintegration/imaging
+resampleFilter = "box"
+
+# Default JPEG or WebP quality setting. Default is 75.
+quality = 75
+
+# Default hint about what type of image. Currently only used for WebP encoding.
+# Default is "photo".
+# Valid values are "picture", "photo", "drawing", "icon", or "text".
+hint = "photo"
+
+# Anchor used when cropping pictures.
+# Default is "smart" which does Smart Cropping, using https://github.com/muesli/smartcrop
+# Smart Cropping is content aware and tries to find the best crop for each image.
+# Valid values are Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
+anchor = "smart"
+
+# Default background color.
+# Hugo will preserve transparency for target formats that supports it,
+# but will fall back to this color for JPEG.
+# Expects a standard HEX color string with 3 or 6 digits.
+# See https://www.google.com/search?q=color+picker
+bgColor = "#ffffff"
