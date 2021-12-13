@@ -2433,6 +2433,10 @@ body a, body button {
   color: var(--color-neutral-800);
 }
 
+.text-neutral-600 {
+  color: var(--color-neutral-600);
+}
+
 .text-primary-500 {
   color: var(--color-primary-500);
 }
