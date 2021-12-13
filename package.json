@@ -8,7 +8,7 @@
 		"postinstall": "vendor-copy",
 		"assets": "rimraf assets/vendor && vendor-copy",
 		"dev": "NODE_ENV=development ./node_modules/tailwindcss/lib/cli.js -i ./assets/css/main.css -o ./assets/css/compiled/main.css --jit -w",
-		"build": "NODE_ENV=production ./node_modules/tailwindcss/lib/cli.js -i ./assets/css/main.css -o ./assets/css/compiled/main.css --jit",
+		"build": "NODE_ENV=production ./node_modules/tailwindcss/lib/cli.js -i ./assets/css/main.css -o ./assets/css/compiled/main.css --jit && hugo --minify",
 		"serve": "hugo server"
 	},
 	"repository": {
