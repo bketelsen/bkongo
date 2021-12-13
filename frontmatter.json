@@ -1,3 +1,27 @@
 {
-  "$schema": "https://frontmatter.codes/frontmatter.schema.json"
+	"$schema": "https://frontmatter.codes/frontmatter.schema.json",
+	"frontMatter.framework.id": "hugo",
+	"frontMatter.content.publicFolder": "static",
+	"frontMatter.content.pageFolders": [
+		{
+			"title": "posts",
+			"path": "[[workspace]]/content/posts"
+		},
+		{
+			"title": "projects",
+			"path": "[[workspace]]/content/projects"
+		},
+		{
+			"title": "lpt",
+			"path": "[[workspace]]/content/lpt"
+		},
+		{
+			"title": "elsewhere",
+			"path": "[[workspace]]/content/elsewhere"
+		},
+		{
+			"title": "bytes",
+			"path": "[[workspace]]/content/bytes"
+		}
+	]
 }
