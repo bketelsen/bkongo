@@ -31,6 +31,7 @@ jobs:
           app_location: "/" # App source code path
           api_location: "api" # Api source code path - optional
           output_location: "public" # Built app content directory - optional
+          build_command: "hugo --minify" # Build command - optional
           #skip_build: "true"
           ###### End of Repository/Build Configurations ######
         env:
