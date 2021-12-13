@@ -1,10 +1,10 @@
 ---
 title: Cooking Spray
-date: "2020-08-25"
+date: '2020-08-25'
 description: Save Cleanup Time
 categories:
     - LPT
-lastmod: "2021-12-02T14:51:45.704Z"
+lastmod: '2021-12-13T17:36:16.857Z'
 ---
 
 Avoid some cleanup with this tiny life hack.
