@@ -1,11 +1,11 @@
 ---
-title: "Hi! I'm Brian :wave:"
-description: Brian Ketelsen - Go, Rust, Linux, WASM, Distributed Computing
-lastmod: "2021-12-13T00:38:44.946Z"
+title: 'Hi! I''m Brian :wave:'
+description: 'Brian Ketelsen - Go, Rust, Linux, WASM, Distributed Computing'
+lastmod: '2021-12-14T10:00:21.277Z'
 ---
 
 {{< lead >}}
-Head in the clouds, feet on the ground.
+Head in the clouds, boots on the ground.
 {{< /lead >}}
 
 I'm going to want to put more words here, preferably good ones.
