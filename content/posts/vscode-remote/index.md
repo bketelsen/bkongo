@@ -13,6 +13,7 @@ description: "Use VS Code against a remote computer or container"
 tags:
 - "vscode"
 - "development"
+- "ssh"
 categories:
 - "Development"
 ---

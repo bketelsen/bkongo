@@ -1,11 +1,10 @@
 ---
 categories:
-  - "go"
-  - "release"
+  - "Development"
 date: 2016-08-15T22:55:00Z
-aliases: 
+aliases:
   - "/go17"
-tags: 
+tags:
   - "go"
   - "release"
 title: "Go 1.7 Released"

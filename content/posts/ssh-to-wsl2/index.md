@@ -15,9 +15,9 @@ tags:
     - linux
     - open source
     - 30daywslchallenge
+    - wsl
 categories:
     - Development
-    - Open Source
 lastmod: '2021-12-13T10:43:48.230Z'
 ---
 

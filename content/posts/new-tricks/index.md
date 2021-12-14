@@ -1,21 +1,21 @@
 ---
-categories: 
-  - "Development"
+categories:
+  - "Career"
 date: 2016-05-04T22:59:00Z
 cover:
     image: "cubicroot-xyz-rFNVqR2rJE0-unsplash.jpg" # image path/url
     alt: "Fetch this, old dog :)" # alt text
     caption: "https://unsplash.com/photos/rFNVqR2rJE0" # display caption under cover
     relative: true # when using page bundles set this to true
-aliases: 
+aliases:
   - "/new-tricks"
-tags: 
+tags:
   - "frontend"
   - "javascript"
 title: "New Tricks - notes as I learn modern front-end development"
 ---
 
-I promised [here](https://brianketelsen.com/opensource/) that I would document my progress learning frontend development.  This isn't a book-length treatise on the subject, but I do have a few notes about my progress.  
+I promised [here](https://brianketelsen.com/opensource/) that I would document my progress learning frontend development.  This isn't a book-length treatise on the subject, but I do have a few notes about my progress.
 
 <!--more-->
 
@@ -30,7 +30,7 @@ It's been a little overwhelming going from zero to having an idea about what I'm
 
 Overall, I did make quite a bit of progress on the Javascript side of the equation.  I'll keep experimenting and learning.  I know I said I wouldn't belabor the point, but do we really need NPM, Webpack, Grunt, Gulp, Bower and all the rest of this mess just to build a web app?  I am really unsure of what each of them is supposed to do and where they fit -- which are complementary and which aren't.  Seems strange to have a project with bower dependencies and npm dependencies vendored in two different folders.  And I never did figure out by looking at the configuration files how the app knows where to find those vendored libraries.  Too much magic.
 
-As I get more comfortable, I think I'd like to try doing some things with just jQuery or backbone.js - something much lighter and farther down the framework stack to see how it feels.  Would love recommendations if you have any.  
+As I get more comfortable, I think I'd like to try doing some things with just jQuery or backbone.js - something much lighter and farther down the framework stack to see how it feels.  Would love recommendations if you have any.
 
 It hasn't been as hard as I thought it would be.  It hasn't really been *fun* either, though.  I suspect with time I'll be more comfortable and I continue to press myself to learn.  Thanks for following along.
 

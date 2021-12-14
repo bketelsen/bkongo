@@ -1,10 +1,10 @@
 ---
-categories: 
-  - "Home"
+categories:
+  - "Home Office"
 date: 2018-10-06T18:20:43Z
-aliases: 
+aliases:
   - "/retractable-green-screen-on-the-cheap"
-tags: 
+tags:
   - "hacks"
   - "video"
 title: "Retractable Green Screen On the Cheap"

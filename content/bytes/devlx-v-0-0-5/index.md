@@ -7,7 +7,6 @@ tags:
 - "lxd"
 - "containers"
 categories:
-- "Tools"
 - "Development"
 ---
 

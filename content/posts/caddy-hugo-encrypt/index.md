@@ -1,6 +1,5 @@
 ---
 categories:
-  - "Development"
   - "Infrastructure"
 date: 2015-11-11T23:49:00Z
 cover:

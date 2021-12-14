@@ -5,7 +5,9 @@ date: 2020-07-13T00:27:29.004Z
 link: 'https://primo.af'
 tags:
   - ssg
+  - svelte
+  - web
 categories:
-  - Web
+  - Development
 ---
 Very interesting take on static site generation and content management.

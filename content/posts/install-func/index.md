@@ -2,7 +2,7 @@
 title: Bash Helpers for Quick Installs
 layout: post
 date: "2020-08-14"
-aliases: 
+aliases:
 - "/install-func"
 cover:
     image: "4pPzKfd6BEg.jpg" # image path/url
@@ -15,7 +15,7 @@ tags:
 - "linux"
 - "open source"
 categories:
-- "Linux"
+- "Terminal"
 ---
 
 This bash setup is the latest evolution of my quest to make a new system install as fast as possible.
@@ -30,7 +30,7 @@ I've created a `bash` function that enables quick software installs without bein
 In my dotfiles directory, which is stored at `~/dotfiles` there's a subdirectory called `install`. That directory contains a few dozen bash scripts that install the various software components and packages I might use. Some of them are needed on all the computers I use, some of them are used only infrequently for certain projects. Here's an example that installs Go:
 
 ```bash
-❯ go.sh 
+❯ go.sh
 #! /bin/bash
 set -e
 VERSION=1.15
@@ -50,7 +50,7 @@ To use these installation scripts I've created a bash function that searches for
 inst() {
 	if [ -f $HOME/dotfiles/install/$1.sh ] ; then
 		echo Installing $1
-		. $HOME/dotfiles/install/$1.sh	
+		. $HOME/dotfiles/install/$1.sh
 	else
 		echo $1 not found
 	fi
@@ -68,7 +68,7 @@ I've been playing with `direnv` integrations to make the installation of require
 
 In the future I may extend the script to search for installation scripts with an `arch` component in the file path, like `~/dotfiles/install/linux/go.sh` or `~/dotfiles/install/macos/go.sh`.  I don't have a need for this right now because I'm not using my Mac for development work.
 
-I may also consider making `meta` scripts that call others. It might be similar to installing a Development metapackage, where the metapackage simply calls the other packages it wants to wrap. 
+I may also consider making `meta` scripts that call others. It might be similar to installing a Development metapackage, where the metapackage simply calls the other packages it wants to wrap.
 
 
 

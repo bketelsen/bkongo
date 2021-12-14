@@ -1,8 +1,6 @@
 ---
-categories: 
-  - "hacks"
-  - "windows"
-  - "linux"
+categories:
+  - "Development"
 date: 2018-03-10T00:42:39Z
 description: "Use a folder from your Windows drive as your $HOME directory in WSL"
 cover:
@@ -10,12 +8,13 @@ cover:
     alt: "windows" # alt text
     caption: "" # display caption under cover
     relative: true # when using page bundles set this to true
-aliases: 
+aliases:
   - "/going-overboard-with-wsl-metadata"
-tags: 
+tags:
   - "hacks"
   - "windows"
   - "linux"
+  - "wsl"
 title: "Going Overboard with WSL metadata"
 
 ---
@@ -43,7 +42,7 @@ This took quite a while to complete because my home directory in WSL was full of
 
 ![Windows Side](windows-side-1.PNG)
 
-That's pretty slick!  Now all I needed to do was make that my $HOME and I'd be set. 
+That's pretty slick!  Now all I needed to do was make that my $HOME and I'd be set.
 
 > Narrator: Nothing is ever that easy.
 
@@ -67,7 +66,7 @@ bketelsen:x:1000:1000:,,,:/mnt/c/home:/bin/bash
 Closing and re-opening WSL confirmed that my WSL `$HOME` directory was now `/mnt/c/home` which contained all the files that were previously stored in `/home/bketelsen`.  I quickly created a text file from the Windows side at `C:\home\thing.txt` and verified that it existed on the WSL mount too.
 
 ### SUCCESS
-With this setup, I have a single folder -- `C:\home` -- available in Windows, but also mounted as my WSL `$HOME`, too.  Files can be modified on either side, with no apparent ill effects. ***Editors Note: This is unproven, and not for risk-averse people.  Use this setup at your own risk.  Backup your data.*** 
+With this setup, I have a single folder -- `C:\home` -- available in Windows, but also mounted as my WSL `$HOME`, too.  Files can be modified on either side, with no apparent ill effects. ***Editors Note: This is unproven, and not for risk-averse people.  Use this setup at your own risk.  Backup your data.***
 
 ![wsl-side](wsl-side.PNG)
 ### One More Thing
@@ -79,7 +78,7 @@ Now I have two different Linux installations in WSL: Ubuntu and Debian.  They ha
 
 ![debian](debian.PNG)
 
-This is extremely cool.  I set up my Go development environment on the Windows side using [Visual Studio Code](https://cda.ms/ht) but set the `$GOPATH` to `C:\home\go`, which is the same as `$HOME/go` on the WSL side.  Now I can develop in Windows or WSL/Linux against the exact same code without any strange permission problems.  Most of the time I'll probably stay in `neovim`, because it's my first love.  But there are no issues when I use VS Code from the Windows side.  I can compile and test from both Windows and Linux with the same source directory.  
+This is extremely cool.  I set up my Go development environment on the Windows side using [Visual Studio Code](https://cda.ms/ht) but set the `$GOPATH` to `C:\home\go`, which is the same as `$HOME/go` on the WSL side.  Now I can develop in Windows or WSL/Linux against the exact same code without any strange permission problems.  Most of the time I'll probably stay in `neovim`, because it's my first love.  But there are no issues when I use VS Code from the Windows side.  I can compile and test from both Windows and Linux with the same source directory.
 
 Here's the contents of my `/etc/wsl.conf` for your perusal:
 ```

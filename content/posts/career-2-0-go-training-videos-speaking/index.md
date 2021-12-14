@@ -1,16 +1,15 @@
 ---
 categories:
-  - "speaking"
-  - "training"
+  - "Career"
 date: 2016-06-18T23:10:00Z
 cover:
     image: "mikael-kristenson-3aVlWP-7bg8-unsplash.jpg" # image path/url
     alt: "classroom" # alt text
     caption: "https://unsplash.com/photos/3aVlWP-7bg8" # display caption under cover
     relative: true # when using page bundles set this to true
-aliases: 
+aliases:
   - "/career-2-0-go-training-videos-speaking"
-tags: 
+tags:
   - "speaking"
   - "training"
 title: "Career 2.0 - Go Training, Videos, Speaking"
@@ -40,7 +39,7 @@ I've started an [online learning center](http://learn.brianketelsen.com) where m
 I hope that these courses fill a gap in the learning materials available today.  Most of the learning materials available aren't very specific and don't dive deep enough into a topic to be of much immediate value.  These courses won't be generalized, but specific and detailed classes that you can put to use right away.
 
 #### In Person Training
-I've also partnered with [O'Reilly](http://oreilly.com) to offer in-person training classes in Boston and San Francisco.  You'll see more specific details with dates and registration information as soon as we've ironed out the schedules.  
+I've also partnered with [O'Reilly](http://oreilly.com) to offer in-person training classes in Boston and San Francisco.  You'll see more specific details with dates and registration information as soon as we've ironed out the schedules.
 
 #### Corporate Training
 Finally, I'm booking corporate training classes for teams that want to learn about Go, Distributed Computing, and Orchestration technologies.  I've got several companies lined up already and I'm very excited to share my [experience](/about/experience).  If your team is looking to level-up on Go, Docker, or Kubernetes shoot me an [email](me@brianketelsen.com) and get on the schedule!
@@ -56,10 +55,10 @@ Here's my calendar for the next several months:
 * September 12-16 - *Available for Training*
 * September 19-23 - Training Booked!
 * September 26-30 - Training Booked!
-* October 3-7 - O'Reilly in Boston 
+* October 3-7 - O'Reilly in Boston
 * October 24-28 - Training Booked!
 * October 31 - November 4 - O'Reilly in San Francisco
 * November 5 - November 30 - *Available for Training*
 * December - *Available for Training*
 
-You can stay informed about my upcoming classes, events, trainings and speaking engagements by signing up for my newsletter in the footer down below. Thank you to everyone who provided much-needed advice as I considered this transition.  I hope you'll come along with me for the ride -- I'm excited that I've finally found a solution to the Conference Organizer's Dilemma. 
+You can stay informed about my upcoming classes, events, trainings and speaking engagements by signing up for my newsletter in the footer down below. Thank you to everyone who provided much-needed advice as I considered this transition.  I hope you'll come along with me for the ride -- I'm excited that I've finally found a solution to the Conference Organizer's Dilemma.

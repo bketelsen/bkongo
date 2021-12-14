@@ -1,8 +1,6 @@
 ---
 categories:
-  - "development"
-  - "linux"
-  - "windows"
+  - "Development"
 date: 2017-09-29T02:25:44Z
 
 cover:
@@ -13,9 +11,9 @@ cover:
 aliases:
   - "/my-cross-platform-dev-setup-on-surface-laptop"
 tags:
-  - "development"
   - "linux"
   - "windows"
+  - "wsl"
 title: "My Cross-Platform Dev Setup on Surface Laptop"
 ---
 

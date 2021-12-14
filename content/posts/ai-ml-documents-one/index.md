@@ -17,7 +17,6 @@ tags:
     - azure
 categories:
     - Development
-    - AI/ML
 lastmod: "2021-12-13T01:18:32.321Z"
 ---
 

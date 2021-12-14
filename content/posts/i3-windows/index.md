@@ -1,8 +1,6 @@
 ---
 categories:
-    - windows
-    - linux
-    - i3
+    - Development
 date: 2016-07-03T22:46:00.000Z
 cover:
     image: windows-on-top-1.png
@@ -15,6 +13,7 @@ tags:
     - windows
     - linux
     - i3
+    - wsl
 title: Running i3 Window Manager on Bash For Windows
 lastmod: '2021-12-13T10:40:46.704Z'
 ---

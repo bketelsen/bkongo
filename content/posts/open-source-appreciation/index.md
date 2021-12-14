@@ -1,15 +1,15 @@
 ---
-categories: 
-  - "open source"
+categories:
+  - "Open Source"
 date: 2015-05-11T23:03:00Z
 cover:
     image: "william-white-TZCppMjaOHU-unsplash.jpg" # image path/url
     alt: "Fetch this, old dog :)" # alt text
     caption: "https://unsplash.com/photos/TZCppMjaOHU" # display caption under cover
     relative: true # when using page bundles set this to true
-aliases: 
+aliases:
   - "/open-source-appreciation"
-tags: 
+tags:
   - "open source"
 title: "Open Source Appreciation"
 
@@ -43,7 +43,7 @@ I was talking with Matt Holt, author of another of my favorite open source proje
 
 1.  If the project has a developer mailing list or IRC/Slack/Gitter channel, pop in and say the same thing.
 
-1.  Write a blog post about the software/project and how you use it or why you like it.  I set up Google News Alerts on new projects and it's always a treat when I get an email from Google listing a blog post about one of my projects. 
+1.  Write a blog post about the software/project and how you use it or why you like it.  I set up Google News Alerts on new projects and it's always a treat when I get an email from Google listing a blog post about one of my projects.
 
 I'm sure you can think of dozens of other ways to show your appreciation for the Open Source Software you use.  None of them are particularly burdensome or time consuming.  And they almost always have a postive impact.
 

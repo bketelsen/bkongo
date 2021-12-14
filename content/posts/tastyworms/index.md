@@ -1,16 +1,15 @@
 ---
-categories: 
-  - "dune"
-  - "recipes"
+categories:
+  - "Recipes"
 date: 2015-12-05T00:08:00Z
 cover:
     image: "sandworm-bread-03.jpg" # image path/url
     alt: "Blessed be the Maker" # alt text
     caption: "Blessed be the Maker" # display caption under cover
     relative: true # when using page bundles set this to true
-aliases: 
+aliases:
   - "/tastyworms"
-tags: 
+tags:
   - "dune"
   - "recipes"
 title: "Tasty Worms"

@@ -15,7 +15,7 @@ tags:
     - byobu
     - tmux
 categories:
-    - Development
+    - Terminal
 lastmod: "2021-12-02T14:39:07.463Z"
 ---
 

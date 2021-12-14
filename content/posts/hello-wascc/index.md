@@ -2,7 +2,7 @@
 title: Hello waSCC
 layout: post
 date: "2020-02-25"
-aliases: 
+aliases:
 - "/hello-wascc"
 cover:
     image: "h3GAGi5tXMU.jpg" # image path/url
@@ -19,7 +19,6 @@ tags:
 - "wasm"
 categories:
 - "Development"
-- "Windows"
 ---
 
 

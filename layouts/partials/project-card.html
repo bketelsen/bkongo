@@ -2,13 +2,13 @@
 <div
     class="relative flex flex-col mt-4 md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-xl p-3 max-w-xs md:max-w-3xl  bg-primary-100">
 
-    <div class="w-full mt-1 bg-white flex flex-col space-y-2 p-3">
+    <div class="w-full mt-1 bg-flex flex-col space-y-2 p-3">
         <a href="{{ .Params.github }}">
-            <h3 class="font-black text-gray-800 md:text-3xl text-xl">{{ .Title }}</h3>
+            <h3 class="font-black text-neutral-800 md:text-3xl text-xl">{{ .Title }}</h3>
         </a>
-        <p class="md:text-lg text-gray-500 text-base">{{ .Description }}</p>
-        <p class="md:text-lg text-gray-500 text-base">{{ .Content }}</p>
-        <p class="text-xl font-black text-gray-800">
+        <p class="text-xl md:text-2xl text-neutral-800 dark:text-neutral">{{ .Description }}</p>
+        <p class="md:text-lg text-neutral-800 dark:text-neutral">{{ .Content }}</p>
+        <p class="md:text-xl font-black text-neutral-800 dark:text-neutral">
             <a href="{{ .Params.github }}">
                 {{ partial "icon.html" "github" }}
                 {{ .Params.org }}/{{ .Params.repo }}

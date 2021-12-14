@@ -38,7 +38,7 @@ showBreadcrumbs = true
 showSummary = false
 
 [taxonomy]
-showTermCount = true
+showTermCount = false
 
 [sitemap]
 excludedKinds = ["taxonomy", "term"]
