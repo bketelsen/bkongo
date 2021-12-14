@@ -1,6 +1,6 @@
 ---
 title: Life Pro Tips
-description: "Little nuggets, mostly for my kids someday"
+description: "Little nuggets, mostly for my kids someday."
 cascade:
     showEdit: false
     showSummary: true

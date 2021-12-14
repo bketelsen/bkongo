@@ -1,6 +1,6 @@
 ---
 title: "Hi! I'm Brian :wave:"
-description: This is a demo of the Congo theme for Hugo.
+description: Brian Ketelsen - Go, Rust, Linux, WASM, Distributed Computing
 lastmod: "2021-12-13T00:38:44.946Z"
 ---
 

@@ -1,0 +1,17 @@
+<!-- component -->
+<div
+    class="relative flex flex-col md:flex-row md:space-x-5 space-y-3 md:space-y-0 rounded-xl shadow-xl p-3 max-w-xs md:max-w-3xl mx-auto  bg-white">
+
+    <div class="w-full mt-4 bg-white flex flex-col space-y-2 p-3">
+
+        <h3 class="font-black text-gray-800 md:text-3xl text-xl">{{ .Title }}</h3>
+        <p class="md:text-lg text-gray-500 text-base">{{ .Description }}</p>
+        <p class="md:text-lg text-gray-500 text-base">{{ .Content }}</p>
+        <p class="text-xl font-black text-gray-800">
+            <a href="{{ .Params.github }}">
+                {{ partial "icon.html" "github" }}
+                {{ .Params.org }}/{{ .Params.repo }}
+            </a>
+        </p>
+    </div>
+</div>
