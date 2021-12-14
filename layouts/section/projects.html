@@ -3,7 +3,7 @@
 {{ if gt .Pages 0 }}
 <section>
   {{ range (.Paginate (.Pages.GroupByDate "2006")).PageGroups }}
-  <div class="flex flex-col justify-center">
+  <div class="flex flex-col">
     {{ range .Pages }}
     {{ partial "project-card.html" . }}
     {{ end }}
