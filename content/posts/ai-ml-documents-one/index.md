@@ -4,11 +4,8 @@ layout: post
 date: "2019-09-03"
 aliases:
     - /ai-ml-documents-one
-cover:
-    image: IGa3Md8wP6g.jpg
-    alt: Cool Robot Helmet
-    caption: "https://unsplash.com/photos/IGa3Md8wP6g"
-    relative: true
+images:
+    - /images/IGa3Md8wP6g.jpg
 description: "Organizing my loose documents with some machine learning, cognitive services, and elbow grease."
 tags:
     - ai
@@ -30,9 +27,7 @@ In this first post of (likely) a multi-part series I'm going to discuss how I am
 **Warning!** This action is destructive!
 {{< /alert >}}
 
-{{< warning >}}
-**Warning!** This action is destructive!
-{{< /warning >}}
+
 
 There are several contributing factors to the problem. Let's start with the obvious ones:
 

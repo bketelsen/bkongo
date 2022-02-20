@@ -2,74 +2,12 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://jpanther.github.io/congo/docs/getting-started/
 
-baseURL = "https://brian.dev/"
+baseURL = "https://www.brian.dev/"
 defaultContentLanguage = "en"
-languageCode = "en"
 
-# copyright = "Copyright © 2021 Brian Ketelsen"
-title = "brian.dev"
-
-enableEmoji = true
 enableRobotsTXT = true
-
+paginate = 10
 summaryLength = 0
 
-[author]
-bio = "A little bit about you"
-image = "img/author.jpg"
-links = [
-  {email = "mailto:mail@bjk.fyi"},
-  #  { link = "https://link-to-some-website.com/" },
-  #   { codepen = "https://codepen.io/username" },
-  #   { dev = "https://dev.to/username" },
-  #   { discord = "https://discord.gg/invitecode" },
-  #   { dribbble = "https://dribbble.com/username" },
-  #   { facebook = "https://facebook.com/username" },
-  #   { foursquare = "https://foursquare.com/username" },
-  {github = "https://github.com/bketelsen"},
-  #   { gitlab = "https://gitlab.com/username" },
-  #   { instagram = "https://instagram.com/username" },
-  #   { keybase = "https://keybase.io/username" },
-  #   { lastfm = "https://lastfm.com/user/username" },
-  {linkedin = "https://linkedin.com/in/bketelsen"},
-  #   { mastodon = "https://mastodon.instance/@username" },
-  #   { medium = "https://medium.com/username" },
-  #   { pinterest = "https://pinterest.com/username" },
-  #   { reddit = "https://reddit.com/user/username" },
-  #   { slack = "https://workspace.url/team/userid" },
-  #   { snapchat = "https://snapchat.com/add/username" },
-  #   { soundcloud = "https://soundcloud.com/username" },
-  #   { steam = "https://steamcommunity.com/profiles/userid" },
-  #   { tiktok = "https://tiktok.com/@username" },
-  {twitch = "https://twitch.tv/bketelsen"},
-  {twitter = "https://twitter.com/bketelsen"},
-  {youtube = "https://youtube.com/bketelsen"},
-]
-name = "Brian Ketelsen"
-
-[imaging]
-# Default resample filter used for resizing. Default is Box,
-# a simple and fast averaging filter appropriate for downscaling.
-# See https://github.com/disintegration/imaging
-resampleFilter = "box"
-
-# Default JPEG or WebP quality setting. Default is 75.
-quality = 75
-
-# Default hint about what type of image. Currently only used for WebP encoding.
-# Default is "photo".
-# Valid values are "picture", "photo", "drawing", "icon", or "text".
-hint = "photo"
-
-# Anchor used when cropping pictures.
-# Default is "smart" which does Smart Cropping, using https://github.com/muesli/smartcrop
-# Smart Cropping is content aware and tries to find the best crop for each image.
-# Valid values are Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight
-anchor = "smart"
-
-# Default background color.
-# Hugo will preserve transparency for target formats that supports it,
-# but will fall back to this color for JPEG.
-# Expects a standard HEX color string with 3 or 6 digits.
-# See https://www.google.com/search?q=color+picker
-bgColor = "#ffffff"
+[outputs]
+  home = ["HTML", "RSS", "JSON"]

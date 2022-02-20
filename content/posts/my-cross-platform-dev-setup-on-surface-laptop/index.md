@@ -50,7 +50,7 @@ I store my code in Windows.  For the past year I treated the WSL filesystem and 
 
 That meant that my source code was only in WSL's filesystem, and completely invisible to Windows.   In turn, this caused limitations on what I could do with the code.  Because it was only in WSL, I had to operate on the files using either command-line tools, or X Windows tools using an X Client from Windows.  It wasn't a show-stopper, but it was a little awkward.
 
-I don't know why it didn't occur to me before, but I just removed the "--color=auto" settings in my .bashrc last weekend, and suddenly I was perfectly happy looking at files on the Windows filesystem from WSL's bash. ![nouglycolors](/content/images/2017/09/nouglycolors.png)  No strange colors, no mental block about viewing the files!  This was actually a pretty big turning point for me.  As crazy as it may sound, just removing coloring from my bash prompt unblocked me from using and viewing the Windows filesystem from WSL.  Tiny change, huge mental gain.  I moved my code from WSL to the Windows filesystem:
+I don't know why it didn't occur to me before, but I just removed the "--color=auto" settings in my .bashrc last weekend, and suddenly I was perfectly happy looking at files on the Windows filesystem from WSL's bash. ![nouglycolors](nouglycolors.png)  No strange colors, no mental block about viewing the files!  This was actually a pretty big turning point for me.  As crazy as it may sound, just removing coloring from my bash prompt unblocked me from using and viewing the Windows filesystem from WSL.  Tiny change, huge mental gain.  I moved my code from WSL to the Windows filesystem:
 ```
 mv ~/src /mnt/c/projects
 ```
