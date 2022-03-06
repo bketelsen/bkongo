@@ -1,44 +1,36 @@
-languageCode = "en"
-languageName = "English"
 displayName = "EN"
 isoCode = "en"
-weight = 1
+languageCode = "en"
+languageName = "English"
 rtl = false
+weight = 1
 
+description = "My awesome website"
+#logo = "img/author.jpg"
 title = "brian.dev"
-# logo = "img/logo.jpg"
- description = "My awesome website"
 # copyright = "Copy, _right?_ :thinking_face:"
 
 dateFormat = "2 January 2006"
 
 [author]
-   name = "Brian Ketelsen"
-  # image = "img/author.jpg"
-   headline = "I'm only human"
-   bio = "A little bit about you"
-  # links = [
-  #   { email = "mailto:hello@your_domain.com" },
-  #   { link = "https://link-to-some-website.com/" },
-  #   { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
-  #   { apple = "https://www.apple.com" },
-  #   { blogger = "https://username.blogspot.com/" },
-  #   { codepen = "https://codepen.io/username" },
+name = "Brian Ketelsen"
+# image = "img/author.jpg"
+bio = "Go, Rust, Web Assembly and Cloud Native"
+headline = "Welcome to the Machine"
+links = [
+  {email = "mailto:mail@bjk.fyi"}, #   { link = "https://link-to-some-website.com/" },  #   { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },  #   { apple = "https://www.apple.com" },  #   { blogger = "https://username.blogspot.com/" },  #   { codepen = "https://codepen.io/username" },
   #   { dev = "https://dev.to/username" },
   #   { discord = "https://discord.gg/invitecode" },
   #   { dribbble = "https://dribbble.com/username" },
   #   { facebook = "https://facebook.com/username" },
   #   { flickr = "https://www.flickr.com/photos/username/" },
   #   { foursquare = "https://foursquare.com/username" },
-  #   { github = "https://github.com/username" },
-  #   { gitlab = "https://gitlab.com/username" },
+  {github = "https://github.com/bketelsen"}, #   { gitlab = "https://gitlab.com/username" },
   #   { google = "https://www.google.com/" },
-  #   { instagram = "https://instagram.com/username" },
-  #   { keybase = "https://keybase.io/username" },
+  {instagram = "https://instagram.com/bketelsen"}, #   { keybase = "https://keybase.io/username" },
   #   { kickstarter = "https://www.kickstarter.com/profile/username" },
   #   { lastfm = "https://lastfm.com/user/username" },
-  #   { linkedin = "https://linkedin.com/in/username" },
-  #   { mastodon = "https://mastodon.instance/@username" },
+  {linkedin = "https://linkedin.com/in/brianketelsen"}, #   { mastodon = "https://mastodon.instance/@username" },
   #   { medium = "https://medium.com/username" },
   #   { microsoft = "https://www.microsoft.com/" },
   #   { patreon = "https://www.patreon.com/username" },
@@ -51,8 +43,7 @@ dateFormat = "2 January 2006"
   #   { telegram = "https://t.me/username" },
   #   { tiktok = "https://tiktok.com/@username" },
   #   { tumblr = "https://username.tumblr.com" },
-  #   { twitch = "https://twitch.tv/username" },
-  #   { twitter = "https://twitter.com/username" },
-  #   { whatsapp = "https://wa.me/phone-number" },
-  #   { youtube = "https://youtube.com/username" },
-  # ]
+  {twitch = "https://twitch.tv/bketelsen"},
+  {twitter = "https://twitter.com/bketelsen"}, #   { whatsapp = "https://wa.me/phone-number" },
+  {youtube = "https://youtube.com/bketelsen"},
+]
